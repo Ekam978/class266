@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Video Processing</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mandali&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<center>
+
+<h1>Image Processing</h1><hr>
+<div class="box container">
+	<h4>Select an image file to rotate it</h4><br>
+
+    <form method="post" action="/" enctype="multipart/form-data">
+		<input  class="btn btn-lg" type="file" name="file"><br>
+	    <input name="angle" placeholder="Enter angle">
+	    <input class="btn" type="Submit">
+	</form><br>
+
+    <img src="{{url_for('display_image', filename=filename)}}">
+
+</div>
+
+</center>
+
+</body>
+</html>
+
+
+
+

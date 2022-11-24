@@ -1,0 +1,38 @@
+
+body {
+    background: #c9aee1;
+    font-family: 'Mandali', sans-serif;
+}
+img{
+    width: 50%;
+    display: block;
+}
+
+
+.btn{
+    background: linear-gradient(to right, #42275a , #734b6d);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 50;
+}
+
+hr{
+    width: 60%;
+    background: linear-gradient(to right, #42275a , #734b6d);
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+.box{
+    width: 75%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+}
