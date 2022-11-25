@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Video Processing</title>
+<title>Image Processing</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,14 +14,24 @@
 
 <center>
 
-<h1>Image Processing</h1><hr>
+<span><h1>Image Processing</h1><img class='logo' src="{{url_for('static', filename='image.png')}}"></span><hr>
 <div class="box container">
 	<h4>Select an image file to rotate it</h4><br>
 
     <form method="post" action="/" enctype="multipart/form-data">
-		<input  class="btn btn-lg" type="file" name="file"><br>
+		<input  class="btn" type="file" name="file"><br>
 	    <input name="angle" placeholder="Enter angle">
-	    <input class="btn" type="Submit">
+		<select name="tint" class="form-select">
+			<option class="option" name="tint color">Tint color</option>
+			<option class="option" name="red">Red</option>
+			<option class="option" name="#ff36b8">Pink</option>
+			<option class="option" name="purple">Purple</option>
+			<option class="option" name="#fff09c">yellow</option>
+			<option class="option" name="#28176e">Blue</option>
+			<option class="option" name="#8ce86d">Green</option>
+			<option class="option" name="gray">Gray</option>
+		</select>&nbsp; &nbsp; &nbsp;
+		<input class="btn" type="Submit">
 	</form><br>
 
     <img src="{{url_for('display_image', filename=filename)}}">

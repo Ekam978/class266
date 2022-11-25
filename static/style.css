@@ -8,6 +8,12 @@ img{
     display: block;
 }
 
+.logo{
+    width: 50px !important;
+    padding: 7px;
+    background-color: #42275a;
+    border-radius: 40px;
+}
 
 .btn{
     background: linear-gradient(to right, #42275a , #734b6d);
@@ -30,9 +36,16 @@ hr{
     border-radius: 20px;
 }
 
+form{
+    text-align: left;
+    width: fit-content;
+}
+
 .box{
     width: 75%;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 30px;
+    height: fit-content;
+    margin-bottom: 10px;
 }
